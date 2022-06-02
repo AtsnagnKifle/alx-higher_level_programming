@@ -12,9 +12,9 @@ if __name__ == "__main__":
         print("{} + {} = {}\n0".format(a, b, add(a, b)))
     elif li[1] == "-":
         print("{} - {} = {}\n0".format(a, b, sub(a, b)))
-    elif li[1] == "+":
+    elif li[1] == "*":
         print("{} * {} = {}\n0".format(a, b, mul(a, b)))
-    elif li[1] == "+":
+    elif li[1] == "/":
         print("{} / {} = {}\n0".format(a, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /\n1")
