@@ -7,14 +7,16 @@ if __name__ == "__main__":
     a = li[0]
     b = li[2]
     if li_len != 3:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>\n1")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        exit(1)
     elif li[1] == "+":
-        print("{} + {} = {}\n0".format(a, b, add(a, b)))
+        print("{} + {} = {}".format(a, b, add(a, b)))
     elif li[1] == "-":
-        print("{} - {} = {}\n0".format(a, b, sub(a, b)))
+        print("{} - {} = {}".format(a, b, sub(a, b)))
     elif li[1] == "*":
-        print("{} * {} = {}\n0".format(a, b, mul(a, b)))
+        print("{} * {} = {}".format(a, b, mul(a, b)))
     elif li[1] == "/":
-        print("{} / {} = {}\n0".format(a, b, div(a, b)))
+        print("{} / {} = {}".format(a, b, div(a, b)))
     else:
-        print("Unknown operator. Available operators: +, -, * and /\n1")
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
