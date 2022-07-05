@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    student class defines a student
+    Student class defines a student
 """
 
 
