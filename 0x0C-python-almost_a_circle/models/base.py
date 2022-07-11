@@ -30,3 +30,11 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
+
+    def from_json_string(self, json_string):
+        """
+            returns a list of json string representation
+        """
+        if json_string is None or json_string == 0:
+            return []
+        return json.loads(json_string)
